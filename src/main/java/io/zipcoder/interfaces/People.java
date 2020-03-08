@@ -1,6 +1,8 @@
 package io.zipcoder.interfaces;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class People<E> {
@@ -23,5 +25,25 @@ public class People<E> {
 
     public void remove(Person person){
         personList.remove(person);
+    }
+
+    public void remove(long id){
+        personList.remove(id);
+    }
+
+    public void removeAll(){
+        personList.removeAll(personList);
+    }
+
+    public Integer count(){
+        return personList.size();
+    }
+
+    public Array[] toArray(){
+        return null;
+    }
+
+    public Iterator iterator(){
+        return null;
     }
 }
