@@ -21,9 +21,9 @@ public class TestStudent {
 
     @Test
     public void testLearn(){
-        Student student = new Student(24,"Greg");
-        student.learn(20.0);
-        Double afterStudy = student.getTotalStudyTime();
+        Student studentPerson = new Student(24,"Greg");
+        studentPerson.learn(20.0);
+        Double afterStudy = studentPerson.getTotalStudyTime();
         Double expected = 20.0;
 
         Assert.assertEquals(expected,afterStudy);
